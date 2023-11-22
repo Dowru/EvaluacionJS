@@ -1,0 +1,26 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/pxfuel.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #000000;
+    font-family: monospace;
+}
+
+.menuFlores {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flores{
+    font-size: 50px;
+}
