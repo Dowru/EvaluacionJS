@@ -10,9 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <title>Stellar Garden</title>
-
-</head>
-
 <body>
     <header>
         <nav>
@@ -21,7 +18,7 @@
                 <li class="navil"><a class="navs" href="index.html">INICIO</a></li>
                 <li class="navil"><a class="navs" href="catalogo.html">CATALOGO</a></li>
                 <li class="navil"><a class="navs" href="contactanos.html">CONTACTANOS</a></li>
-                <li class="navil"><a class="navs" href="carrito.html">🛒</a></li>
+                <li class="navil"><a class="navs" onclick="mostrarCarrito()">🛒</a></li>>
             </ul>
         </nav>
     </header>
@@ -30,77 +27,90 @@
             <div class="flores">
                 <img src="img/flor1.png" alt="">
                 <div class="floresInfo">
-                    <p>Flor 1</p>
-                    <p>Precio</p>
+                    <p>Amaranto Tricolor</p>
+                    <p>Precio: $14.000</p>
                 </div>
-                <button>Agregar</button>
+                <button class="btn" onclick="agregarAlCarrito('Amaranto Tricolor', 14000)">Agregar</button>
             </div>
             <div class="flores">
                 <img src="img/flor2.png" alt="">
                 <div class="floresInfo">
-                    <p>Flor 2</p>
-                    <p>Precio</p>
+                    <p>Lirio del Amazonas</p>
+                    <p>Precio: $10.000</p>
                 </div>
-                <button>Agregar</button>
+                <button class="btn" onclick="agregarAlCarrito('Lirio del Amazonas', 10000)">Agregar</button>
             </div>
             <div class="flores">
                 <img src="img/flor3.png" alt="">
                 <div class="floresInfo">
-                    <p>Flor 3</p>
-                    <p>Precio</p>
+                    <p>Clavel Chino</p>
+                    <p>Precio: $15.000</p>
                 </div>
-                <button>Agregar</button>
+                <button class="btn" onclick="agregarAlCarrito('Clavel Chino', 15000)">Agregar</button>
             </div>
             <div class="flores">
                 <img src="img/flor4.png" alt="">
                 <div class="floresInfo">
-                    <p>Flor 4</p>
-                    <p>Precio</p>
+                    <p>Rosa de porcelana</p>
+                    <p>Precio: $20.000</p>
                 </div>
-                <button>Agregar</button>
+                <button class="btn" onclick="agregarAlCarrito('Rosa de porcelana', 20000)">Agregar</button>
             </div>
             <div class="flores">
                 <img src="img/flor5.png" alt="">
                 <div class="floresInfo">
-                    <p>Flor 5</p>
-                    <p>Precio</p>
+                    <p>Petunia Nocturna</p>
+                    <p>Precio: $10.000</p>
                 </div>
-                <button>Agregar</button>
+                <button class="btn" onclick="agregarAlCarrito('Petunia Nocturna', 10000)">Agregar</button>
             </div>
             <div class="flores">
                 <img src="img/flor6.png" alt="">
                 <div class="floresInfo">
-                    <p>Flor 6</p>
-                    <p>Precio</p>
+                    <p>Cráter Negro</p>
+                    <p>Precio: $12.000</p>
                 </div>
-                <button>Agregar</button>
+                <button class="btn" onclick="agregarAlCarrito('Cráter Negro', 12000)">Agregar</button>
             </div>
             <div class="flores">
                 <img src="img/flor7.png" alt="">
                 <div class="floresInfo">
-                    <p>Flor 7</p>
-                    <p>Precio</p>
+                    <p>Flor de invierno</p>
+                    <p>Precio: $10:000</p>
                 </div>
-                <button>Agregar</button>
+                <button class="btn" onclick="agregarAlCarrito('Flor de invierno', 10000)">Agregar</button>
             </div>
             <div class="flores">
                 <img src="img/flor8.png" alt="">
                 <div class="floresInfo">
-                    <p>Flor 8</p>
-                    <p>Precio</p>
+                    <p>Rosa estelar</p>
+                    <p>Precio: $8.000</p>
                 </div>
-                <button>Agregar</button>
+                <button class="btn"onclick="agregarAlCarrito('Rosa estelar', 8000)">Agregar</button>
             </div>
         </div>
 
+    <div id="divCarrito">
+        <button class="cerrarCarrito" onclick="ocultarCarrito()">✖️</button>
+        <div id="carritoContenido">
+            <p></p>
+        </div>
+        <div class="botonesCarrito">
+            <button class="btnTotal" onclick="mostrarTotalCarrito()">Mostrar Total</button>
+            <button class="btnTotal" onclick="limpiarCarrito()">Vaciar Carrito</button>
+        </div>
+        <div id="total">
+            <p id="totalCarrito"></p>
+        </div>
+    </div>
+
     <footer class="pdp">
-        
         <div class="cr">
             <small>&#169; 2023 <b>Stellar Garden</b> - Todos los Derechos Reservados</small>
         </div>
-
     </footer>
-    
+
+    <script src="js/app.js"></script>
 </body>
 </html>
 
